@@ -1,0 +1,11 @@
+def es_palindromo(cadena):
+    cadena = cadena.lower().replace(" ", "")
+    return cadena == cadena[::-1]
+
+def main():
+    cadena_ingresada = input("Ingrese una cadena de texto: ")
+    if es_palindromo(cadena_ingresada):
+        print("Es un palíndromo.")
+    else:
+        print("No es un palíndromo.")
+main()

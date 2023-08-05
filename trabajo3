@@ -1,0 +1,15 @@
+import random
+
+def generar_lista_aleatoria(longitud, rango_min, rango_max):
+    lista_aleatoria = [random.randint(rango_min, rango_max) for _ in range(longitud)]
+    return lista_aleatoria
+
+def main():
+    longitud_lista = 15
+    rango_min = 20
+    rango_max = 200
+
+    lista_aleatoria = generar_lista_aleatoria(longitud_lista, rango_min, rango_max)
+
+    print("Lista aleatoria generada:", lista_aleatoria)
+main()
